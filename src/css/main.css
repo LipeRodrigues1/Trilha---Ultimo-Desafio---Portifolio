@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100vh;
+}
+.header i{
+    width: 3.25rem;
+    height: 3.25rem;
+    color: var(--icon-color);
+}
+.header_brand .brand_logo{
+    height: 3.25rem;
+    width: 3.25rem;
+}
+
+.menu_principal{
+    display: flex;
+}
