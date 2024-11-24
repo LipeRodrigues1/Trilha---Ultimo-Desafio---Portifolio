@@ -1,5 +1,9 @@
 body{
-    background-color: white;
+    background-color: #837f7f;
+    font-family:"Funnel Display",serif;
+}
+a{
+    text-decoration: none;
 }
 .header{
     display: flex;
@@ -14,12 +18,60 @@ body{
     width: 3.25rem;
     height: 3.25rem;
     color: var(--icon-color);
+    justify-content: right;
+    
 }
 .header_brand .brand_logo{
     height: 3.25rem;
     width: 3.25rem;
 }
 
-.menu_principal{
+.menu{
     display: flex;
+    align-items: center;
+    background: #2c2c2c;
+}
+.menu_itens{
+    width: 100vw;
+}
+
+.menu_principal{
+    justify-content: space-between;
+    border-top: 1px solid #28292E;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+.menu_principal .menu_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: .5rem;
+}
+
+.menu_link.active .menu_icon,
+.menu_link.active .menu_text{
+    color: white;
+    font-weight: 600;
+}
+
+.menu_icon, .menu_text{
+    color: #9a9a9c;
+}
+
+.menu_icon{
+    font-size: 1.5rem;
+}
+.menu_text{
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+@media(min-width: 760px){
+    .menu_principal{
+        display: none;
+    }
 }
